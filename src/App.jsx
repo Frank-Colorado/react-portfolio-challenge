@@ -1,13 +1,19 @@
-import { useState } from "react";
+import React from "react";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <h1>React Portfolio</h1>
+      <Header />
+      <div
+        style={{
+          backgroundColor: "#0A090C",
+          height: "100vh",
+        }}
+      ></div>
     </div>
   );
 }
