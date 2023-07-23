@@ -6,14 +6,29 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#F7FFF7",
+        height: "100vh",
+      }}
+    >
       <Header />
       <div
         style={{
-          backgroundColor: "#0A090C",
-          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
         }}
-      ></div>
+      >
+        <h1
+          style={{
+            color: "white",
+          }}
+        >
+          Hello World
+        </h1>
+      </div>
     </div>
   );
 }
