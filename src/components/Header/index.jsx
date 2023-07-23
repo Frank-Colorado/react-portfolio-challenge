@@ -1,13 +1,31 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+
 import { Link } from "react-router-dom";
 
-const pages = ["About Me", "Portfolio", "Contact", "Resume"];
-
+const pages = [
+  {
+    name: "About Me",
+    path: "/",
+  },
+  {
+    name: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+  {
+    name: "Resume",
+    path: "/resume",
+  },
+];
 const Header = () => {
   return (
     <AppBar
@@ -17,7 +35,7 @@ const Header = () => {
       }}
       position="static"
     >
-      <Container maxWidth>
+      <Container maxWidth="false">
         <Toolbar>
           <Typography
             variant="h3"
@@ -40,30 +58,34 @@ const Header = () => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                variant="text"
-                sx={{
-                  fontFamily: "Constantia Regular",
-                  fontWeight: 700,
-                  fontSize: "1.1rem",
-                  letterSpacing: ".3rem",
-                  color: "inherit",
+            {pages.map((page, index) => (
+              <Link
+                to={`${page.path}`}
+                key={index}
+                style={{
+                  color: "#F7FFF7",
                   textDecoration: "none",
-                  margin: "2rem 1rem",
-                  "&:hover": {
-                    color: "#F7FFF7",
-                    opacity: 0.7,
-                    borderBottom: "2px solid #F7FFF7",
-                    transition: "all .5s ease-in",
-                  },
                 }}
-                component="a"
-                href={`/${page.toLowerCase()}`}
               >
-                {page}
-              </Button>
+                <Button
+                  variant="text"
+                  sx={{
+                    fontFamily: "Constantia Regular",
+                    fontWeight: 700,
+                    fontSize: "1.1rem",
+                    letterSpacing: ".3rem",
+                    color: "inherit",
+                    margin: "2rem 1rem",
+                    "&:hover": {
+                      color: "#948B89",
+                      borderBottom: "2px solid #F7FFF7",
+                      transition: "all .4s ease-in",
+                    },
+                  }}
+                >
+                  {page.name}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
