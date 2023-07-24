@@ -28,7 +28,7 @@ This web app is my personal portfolio page that I created using React. I utilize
 
 ## Visuals
 
-IMAGE HERE
+![image](https://github.com/Frank-Colorado/react-portfolio-challenge/assets/123683792/8443316c-500f-414a-a1eb-59bf1c68b780)
 
 ## Website
 
