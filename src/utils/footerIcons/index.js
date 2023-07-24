@@ -5,7 +5,7 @@ const footerIcons = [
   },
   {
     icon: "LinkedIn",
-    link: "https://www.linkedin.com/in/frank-colorado-2323a6285/",
+    link: "https://www.linkedin.com/in/francisco-colorado-2323a6285/",
   },
   {
     icon: "Email",
