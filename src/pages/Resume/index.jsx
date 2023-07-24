@@ -87,7 +87,7 @@ const Resume = () => {
       >
         Dowload My Resume {""}
         <Link
-          href="https://drive.google.com/file/d/1Z3Z3Q4Z3Z3Q4Z3Q4Z3Q4Z3Q4Z3Q4Z3Q4/view?usp=sharing"
+          href="https://docs.google.com/document/d/1fIdy_ogGAobkcqsIXJKZpJK9WDWNH0cqzbSwSIysh68/edit?usp=sharing"
           target="_blank"
           rel="noopener"
           sx={{
