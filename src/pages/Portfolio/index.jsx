@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import ProjectCard from "../../components/ProjectCard";
 
 const Portfolio = () => {
   return (

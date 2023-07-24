@@ -7,6 +7,7 @@ import {
   CardActions,
   CardActionArea,
   Link,
+  Typography,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
