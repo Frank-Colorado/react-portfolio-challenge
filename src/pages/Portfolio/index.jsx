@@ -2,45 +2,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ProjectCard from "../../components/ProjectCard";
 
-const projects = [
-  {
-    name: "Project 1",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-  {
-    name: "Project 2",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-  {
-    name: "Project 3",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-  {
-    name: "Project 4",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-  {
-    name: "Project 5",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-  {
-    name: "Project 6",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
-  },
-];
-
 const Portfolio = () => {
   return (
     <div
