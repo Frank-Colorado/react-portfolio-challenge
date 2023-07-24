@@ -1,5 +1,8 @@
 import getgoodgames from "../../assets/getgoodgames.png";
 import richlifestyle from "../../assets/richlifestyle.png";
+import techblog from "../../assets/techblog.png";
+import notetaker from "../../assets/notetaker.png";
+import codequizgame from "../../assets/codequizgame.png";
 
 const projects = [
   {
@@ -18,25 +21,25 @@ const projects = [
     name: "Soccer Scout",
     image: "https://picsum.photos/200/300",
     github: "https://github.com/demiapollo/soccerScout.git",
-    website: "https://tech-blog-challenge14.herokuapp.com/",
+    website: "https://google.com",
   },
   {
     name: "Tech Blog",
-    image: "https://picsum.photos/200/300",
+    image: techblog,
     github: "https://github.com/Frank-Colorado/tech-blog-challenge.git",
-    website: "https://google.com",
+    website: "https://tech-blog-challenge14.herokuapp.com/",
   },
   {
-    name: "Project 5",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
+    name: "Note Taker",
+    image: notetaker,
+    github: "https://github.com/Frank-Colorado/note-taker-challenge.git",
+    website: "https://note-taker-challenge.herokuapp.com/notes",
   },
   {
-    name: "Project 6",
-    image: "https://picsum.photos/200/300",
-    github: "https://github.com",
-    website: "https://google.com",
+    name: "Code Quiz Game",
+    image: codequizgame,
+    github: "https://github.com/Frank-Colorado/code-quiz-game.git",
+    website: "https://frank-colorado.github.io/code-quiz-game/",
   },
 ];
 
