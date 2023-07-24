@@ -15,7 +15,7 @@ const projects = [
     name: "Rich Life Style",
     image: richlifestyle,
     github: "https://github.com/Frank-Colorado/rich-life-style.git",
-    website: "https://google.com",
+    website: "https://rich-life-style-f9caa98d3d2e.herokuapp.com/",
   },
   {
     name: "Soccer Scout",
