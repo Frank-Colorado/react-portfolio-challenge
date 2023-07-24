@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const ProfileCard = ({ name, image, github, website }) => {
+const ProjectCard = ({ name, image, github, website }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -43,4 +43,4 @@ const ProfileCard = ({ name, image, github, website }) => {
   );
 };
 
-export default ProfileCard;
+export default ProjectCard;
