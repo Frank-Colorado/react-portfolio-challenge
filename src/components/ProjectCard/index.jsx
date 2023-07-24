@@ -6,7 +6,6 @@ import {
   IconButton,
   CardActions,
   CardActionArea,
-  Link,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -78,7 +77,6 @@ const ProjectCard = ({ name, image, github, website }) => {
           <GitHubIcon
             sx={{
               color: "white",
-
               width: "15%",
               height: "15%",
             }}
