@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ import Resume from "./pages/Resume";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div
         style={{
           backgroundColor: "#F7FFF7",
@@ -39,7 +39,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
