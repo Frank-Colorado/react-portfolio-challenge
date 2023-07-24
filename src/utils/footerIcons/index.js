@@ -1,15 +1,15 @@
 const footerIcons = [
   {
     icon: "GitHub",
-    link: "",
+    link: "https://github.com/Frank-Colorado",
   },
   {
     icon: "LinkedIn",
-    link: "",
+    link: "https://www.linkedin.com/in/frank-colorado-2323a6285/",
   },
   {
     icon: "Email",
-    link: "",
+    link: "mailto:chawnkiee@gmail.com",
   },
 ];
 
