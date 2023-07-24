@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import profileImage from "../../assets/me.jpg";
 
 const Home = () => {
   return (
@@ -30,17 +31,18 @@ const Home = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-around",
+          justifyContent: "center",
           alignContent: "center",
           height: "55%",
         }}
       >
         <Avatar
           alt="Frank Colorado"
-          src="/static/images/avatar/1.jpg"
+          src={profileImage}
           sx={{
             width: "20%",
-            height: "70%",
+            height: "75%",
+            marginRight: "5rem",
           }}
         />
         <Typography
@@ -58,8 +60,9 @@ const Home = () => {
           align="center"
         >
           Frank Colorado is an up and coming full stack web developer based in
-          Tampa, Florida. Below you can find his portfolio highlighting some of
-          his development work, as well as information on how to contact him.
+          Tampa, Florida. You can find his portfolio highlighting some of his
+          development work and his resume throughout the site, as well as links
+          to platforms where you can find him and his work in the footer.
         </Typography>
       </Stack>
     </div>
