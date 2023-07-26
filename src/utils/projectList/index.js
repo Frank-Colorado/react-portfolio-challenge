@@ -3,6 +3,7 @@ import richlifestyle from "../../assets/richlifestyle.png";
 import techblog from "../../assets/techblog.png";
 import notetaker from "../../assets/notetaker.png";
 import codequizgame from "../../assets/codequizgame.png";
+import soccerscout from "../../assets/soccerscout.png";
 
 const projects = [
   {
@@ -19,9 +20,9 @@ const projects = [
   },
   {
     name: "Soccer Scout",
-    image: "https://picsum.photos/200/300",
+    image: soccerscout,
     github: "https://github.com/demiapollo/soccerScout.git",
-    website: "https://google.com",
+    website: "https://soccerscout-c2b068cbb836.herokuapp.com/",
   },
   {
     name: "Tech Blog",
