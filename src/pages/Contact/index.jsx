@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import {
   TextField,
   Button,
@@ -6,11 +7,11 @@ import {
   Grid,
   Box,
   Paper,
-} from "@mui/material";
+} from '@mui/material';
 
-import { outlinedInputClasses } from "@mui/material/OutlinedInput";
+import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 
-import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
+import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
 const customTheme = (outerTheme) =>
   createTheme({
     palette: {
@@ -20,11 +21,11 @@ const customTheme = (outerTheme) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            "--TextField-brandBorderColor": "#0A090C",
-            "--TextField-brandBorderHoverColor": "#0A090C",
-            "--TextField-brandBorderFocusedColor": "#0A090C",
-            "& label.Mui-focused": {
-              color: "var(--TextField-brandBorderFocusedColor)",
+            '--TextField-brandBorderColor': '#0A090C',
+            '--TextField-brandBorderHoverColor': '#0A090C',
+            '--TextField-brandBorderFocusedColor': '#0A090C',
+            '& label.Mui-focused': {
+              color: 'var(--TextField-brandBorderFocusedColor)',
             },
           },
         },
@@ -32,14 +33,14 @@ const customTheme = (outerTheme) =>
       MuiOutlinedInput: {
         styleOverrides: {
           notchedOutline: {
-            borderColor: "var(--TextField-brandBorderColor)",
+            borderColor: 'var(--TextField-brandBorderColor)',
           },
           root: {
             [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
-              borderColor: "var(--TextField-brandBorderHoverColor)",
+              borderColor: 'var(--TextField-brandBorderHoverColor)',
             },
             [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
-              borderColor: "var(--TextField-brandBorderFocusedColor)",
+              borderColor: 'var(--TextField-brandBorderFocusedColor)',
             },
           },
         },
@@ -49,24 +50,29 @@ const customTheme = (outerTheme) =>
 
 const Contact = () => {
   const outerTheme = useTheme();
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div
       style={{
-        height: "100vh",
-        width: "100vw",
+        height: '100vh',
+        width: '100vw',
       }}
     >
       <Typography
         variant="h3"
         align="center"
         sx={{
-          fontFamily: "Constantia Regular",
+          fontFamily: 'Constantia Regular',
           fontWeight: 700,
-          letterSpacing: ".3rem",
-          color: "inherit",
-          textDecoration: "none",
-          margin: "4rem",
+          letterSpacing: '.3rem',
+          color: 'inherit',
+          textDecoration: 'none',
+          margin: '4rem',
         }}
       >
         Contact Me
@@ -74,18 +80,18 @@ const Contact = () => {
       <Container maxWidth="md">
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100%",
-            boxShadow: "0 0 5px 0 rgba(10, 9, 12, .5)",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%',
+            boxShadow: '0 0 5px 0 rgba(10, 9, 12, .5)',
           }}
         >
           <Paper
             elevation={3}
             sx={{
-              width: "100%",
-              padding: "1rem",
+              width: '100%',
+              padding: '1rem',
             }}
           >
             <form name="contact">
@@ -96,8 +102,9 @@ const Contact = () => {
                       required
                       fullWidth
                       id="name"
-                      name="name"
+                      name="user_name"
                       label="Name"
+                      type="text"
                       variant="outlined"
                     />
                   </Grid>
@@ -106,7 +113,7 @@ const Contact = () => {
                       required
                       fullWidth
                       id="email"
-                      name="email"
+                      name="user_email"
                       label="Email"
                       type="email"
                       variant="outlined"
@@ -130,16 +137,16 @@ const Contact = () => {
                       fullWidth
                       variant="contained"
                       sx={{
-                        width: "30%",
-                        backgroundColor: "#0A090C",
-                        color: "#F7FFF7",
-                        "&:hover": {
-                          backgroundColor: "#F7FFF7",
-                          color: "#0A090C",
+                        width: '30%',
+                        backgroundColor: '#0A090C',
+                        color: '#F7FFF7',
+                        '&:hover': {
+                          backgroundColor: '#F7FFF7',
+                          color: '#0A090C',
                         },
                       }}
                     >
-                      Submit
+                      Send
                     </Button>
                   </Grid>
                 </ThemeProvider>
