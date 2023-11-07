@@ -1,13 +1,4 @@
-import {
-  Typography,
-  Container,
-  Grid,
-  Paper,
-  Link,
-  List,
-  ListItem,
-  ListItemText,
-} from '@mui/material';
+import { Typography, Grid, Link } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const frontEndSkills = [
