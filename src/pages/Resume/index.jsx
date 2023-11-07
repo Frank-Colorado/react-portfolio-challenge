@@ -7,58 +7,58 @@ import {
   List,
   ListItem,
   ListItemText,
-} from "@mui/material";
-import { makeStyles } from "@mui/styles";
+} from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const frontEndSkills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "jQuery",
-  "React",
-  "Bootstrap",
-  "Material UI",
-  "Handlebars",
-  "Responsive Design",
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'jQuery',
+  'React',
+  'Bootstrap',
+  'Material UI',
+  'Handlebars',
+  'Responsive Design',
 ];
 const backEndSkills = [
-  "APIs",
-  "Node",
-  "Express",
-  "MySQL, Sequelize",
-  "MongoDB, Mongoose",
-  "REST",
-  "GraphQL",
-  "Authentication",
-  "PWA",
+  'APIs',
+  'Node',
+  'Express',
+  'MySQL, Sequelize',
+  'MongoDB, Mongoose',
+  'REST',
+  'GraphQL',
+  'Authentication',
+  'PWA',
 ];
 
 const useStyles = makeStyles(() => ({
   listItem: {
-    marginBottom: "0.5rem",
-    color: "white",
-    padding: "0.5rem",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
+    marginBottom: '0.5rem',
+    color: 'white',
+    padding: '0.5rem',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
   },
   listItemText: {
-    fontFamily: "Constantia Regular",
+    fontFamily: 'Constantia Regular',
     fontWeight: 200,
-    letterSpacing: ".3rem",
-    color: "#0A090C",
-    fontSize: "1rem",
-    textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)",
+    letterSpacing: '.3rem',
+    color: '#0A090C',
+    fontSize: '1rem',
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
   },
 }));
 
 const header = {
-  fontFamily: "Constantia Regular",
+  fontFamily: 'Constantia Regular',
   fontWeight: 700,
-  letterSpacing: ".3rem",
-  color: "inherit",
-  textDecoration: "none",
-  marginTop: "4rem",
+  letterSpacing: '.3rem',
+  color: 'inherit',
+  textDecoration: 'none',
+  marginTop: '4rem',
 };
 
 const Resume = () => {
@@ -66,8 +66,8 @@ const Resume = () => {
   return (
     <div
       style={{
-        height: "100vh",
-        width: "100vw",
+        height: '100vh',
+        width: '100vw',
       }}
     >
       <Typography variant="h3" align="center" sx={header}>
@@ -77,38 +77,38 @@ const Resume = () => {
         variant="h5"
         align="center"
         sx={{
-          fontFamily: "Constantia Regular",
+          fontFamily: 'Constantia Regular',
           fontWeight: 700,
-          letterSpacing: ".3rem",
-          color: "inherit",
-          textDecoration: "none",
-          margin: "4rem",
+          letterSpacing: '.3rem',
+          color: 'inherit',
+          textDecoration: 'none',
+          margin: '4rem',
         }}
       >
-        Dowload My Resume {""}
+        Dowload My Resume {''}
         <Link
-          href="https://docs.google.com/document/d/1fIdy_ogGAobkcqsIXJKZpJK9WDWNH0cqzbSwSIysh68/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1ST2IWUPNB_v5KR0afDAUFxi_gUGpaCgZ9wLaW4VU7Jc/edit?usp=sharing"
           target="_blank"
           rel="noopener"
           sx={{
-            color: "#948B89",
-            textDecoration: "none",
-            position: "relative",
-            "&:after": {
+            color: '#948B89',
+            textDecoration: 'none',
+            position: 'relative',
+            '&:after': {
               content: '""',
-              position: "absolute",
+              position: 'absolute',
               left: 0,
               bottom: 0,
               height: 2,
               width: 0,
-              backgroundColor: "#948B89",
-              transition: "width 0.3s ease",
+              backgroundColor: '#948B89',
+              transition: 'width 0.3s ease',
             },
-            "&:hover::after": {
-              width: "100%",
+            '&:hover::after': {
+              width: '100%',
             },
-            "&:hover": {
-              color: "#0A090C",
+            '&:hover': {
+              color: '#0A090C',
             },
           }}
         >
@@ -130,7 +130,7 @@ const Resume = () => {
             align="center"
             sx={header}
             style={{
-              borderBottom: "1px solid #948B89",
+              borderBottom: '1px solid #948B89',
             }}
           >
             Front End Skills
@@ -158,13 +158,13 @@ const Resume = () => {
             variant="h5"
             align="center"
             sx={{
-              fontFamily: "Constantia Regular",
+              fontFamily: 'Constantia Regular',
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-              marginTop: "4rem",
-              borderBottom: "1px solid #948B89",
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+              marginTop: '4rem',
+              borderBottom: '1px solid #948B89',
             }}
           >
             Back End Skills
