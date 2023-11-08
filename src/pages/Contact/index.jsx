@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   TextField,
   Button,
@@ -7,11 +7,13 @@ import {
   Grid,
   Box,
   Paper,
+  Snackbar,
+  Alert,
 } from '@mui/material';
-
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
-
 import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
+import emailjs from '@emailjs/browser';
+
 const customTheme = (outerTheme) =>
   createTheme({
     palette: {
@@ -54,6 +56,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs.sendForm('', '', formRef.current, '').then(
+      (result) => {
+        console.log(result.text);
+        console.log('message sent');
+        formRef.current.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
@@ -94,7 +107,7 @@ const Contact = () => {
               padding: '1rem',
             }}
           >
-            <form name="contact">
+            <form name="contact" ref={formRef} onSubmit={handleSubmit}>
               <Grid container spacing={2}>
                 <ThemeProvider theme={customTheme(outerTheme)}>
                   <Grid item xs={12} sm={6}>
@@ -102,7 +115,7 @@ const Contact = () => {
                       required
                       fullWidth
                       id="name"
-                      name="user_name"
+                      name="name"
                       label="Name"
                       type="text"
                       variant="outlined"
@@ -113,7 +126,7 @@ const Contact = () => {
                       required
                       fullWidth
                       id="email"
-                      name="user_email"
+                      name="email"
                       label="Email"
                       type="email"
                       variant="outlined"
