@@ -39,8 +39,8 @@ const Header = () => {
         <Toolbar>
           <Typography
             variant="h3"
-            component="a"
-            href="/"
+            component={Link}
+            to="/"
             sx={{
               fontFamily: 'Constantia Regular',
               fontWeight: 700,
