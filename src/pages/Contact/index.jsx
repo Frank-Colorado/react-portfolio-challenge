@@ -57,16 +57,23 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('', '', formRef.current, '').then(
-      (result) => {
-        console.log(result.text);
-        console.log('message sent');
-        formRef.current.reset();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+          formRef.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
