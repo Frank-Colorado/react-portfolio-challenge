@@ -6,16 +6,16 @@ import {
   IconButton,
   CardActions,
   CardActionArea,
-} from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
+} from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const ProjectCard = ({ name, image, github, website }) => {
   return (
     <Card
       sx={{
-        minWidth: 380,
+        maxWidth: 450,
         minHeight: 350,
-        backgroundColor: "black",
+        backgroundColor: 'black',
       }}
     >
       <CardActionArea>
@@ -24,12 +24,16 @@ const ProjectCard = ({ name, image, github, website }) => {
           height="220"
           image={image}
           alt="{name} picture"
+          sx={{
+            cursor: 'default',
+          }}
         />
 
         <CardContent
           sx={{
-            display: "flex",
-            justifyContent: "center",
+            display: 'flex',
+            justifyContent: 'center',
+            cursor: 'default',
           }}
         >
           <Typography
@@ -40,14 +44,14 @@ const ProjectCard = ({ name, image, github, website }) => {
             target="_blank"
             align="center"
             sx={{
-              color: "white",
-              fontFamily: "Constantia Regular",
+              color: 'white',
+              fontFamily: 'Constantia Regular',
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
-              "&:hover": {
-                color: "#948B89",
-                transition: "color 0.5s ease-in",
+              letterSpacing: '.3rem',
+              textDecoration: 'none',
+              '&:hover': {
+                color: '#948B89',
+                transition: 'color 0.5s ease-in',
               },
             }}
           >
@@ -57,16 +61,16 @@ const ProjectCard = ({ name, image, github, website }) => {
       </CardActionArea>
       <CardActions
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <IconButton
           sx={{
-            "&:hover": {
-              transform: "scale(1.2)",
-              transition: "transform 0.5s ease-in",
+            '&:hover': {
+              transform: 'scale(1.2)',
+              transition: 'transform 0.5s ease-in',
             },
           }}
           aria-label="github"
@@ -76,9 +80,9 @@ const ProjectCard = ({ name, image, github, website }) => {
         >
           <GitHubIcon
             sx={{
-              color: "white",
-              width: "15%",
-              height: "15%",
+              color: 'white',
+              width: '15%',
+              height: '15%',
             }}
           />
         </IconButton>
