@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   TextField,
   Button,
@@ -8,8 +8,8 @@ import {
   Box,
   Paper,
   Snackbar,
-  Alert,
 } from '@mui/material';
+import MuiAlert from '@mui/material/Alert';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
 import emailjs from '@emailjs/browser';
@@ -50,9 +50,22 @@ const customTheme = (outerTheme) =>
     },
   });
 
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
 const Contact = () => {
+  const [open, setOpen] = useState(false);
+
   const outerTheme = useTheme();
   const formRef = useRef();
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -69,6 +82,7 @@ const Contact = () => {
           console.log(result.text);
           console.log('message sent');
           formRef.current.reset();
+          setOpen(true);
         },
         (error) => {
           console.log(error.text);
@@ -175,6 +189,11 @@ const Contact = () => {
           </Paper>
         </Box>
       </Container>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Message sent!
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
