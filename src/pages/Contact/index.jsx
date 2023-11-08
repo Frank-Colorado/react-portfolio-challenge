@@ -60,7 +60,7 @@ const Contact = () => {
   const outerTheme = useTheme();
   const formRef = useRef();
 
-  const handleClose = (event, reason) => {
+  const handleClose = (_event, reason) => {
     if (reason === 'clickaway') {
       return;
     }
