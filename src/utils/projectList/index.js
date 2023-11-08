@@ -4,14 +4,16 @@ import techBlog from '../../assets/techblog.png';
 import noteTaker from '../../assets/notetaker.png';
 import codeQuizGame from '../../assets/codequizgame.png';
 import soccerScout from '../../assets/soccerscout.png';
+import gitGudGames from '../../assets/gitgudgames.png';
 
 const projects = [
   {
-    name: 'Get Good Games',
-    image: getGoodGames,
-    github: 'https://github.com/Frank-Colorado/get-good-games.git',
-    website: 'https://frank-colorado.github.io/get-good-games/',
+    name: 'Git Gud Games',
+    image: gitGudGames,
+    github: 'https://github.com/Frank-Colorado/Git-Gud-Games.git',
+    website: 'https://git-gud-games-276f8dfab5d3.herokuapp.com/',
   },
+
   {
     name: 'Rich Life Style',
     image: richLifestyle,
@@ -23,6 +25,12 @@ const projects = [
     image: soccerScout,
     github: 'https://github.com/demiapollo/soccerScout.git',
     website: 'https://soccerscout-c2b068cbb836.herokuapp.com/',
+  },
+  {
+    name: 'Get Good Games',
+    image: getGoodGames,
+    github: 'https://github.com/Frank-Colorado/get-good-games.git',
+    website: 'https://frank-colorado.github.io/get-good-games/',
   },
   {
     name: 'Tech Blog',
@@ -41,11 +49,6 @@ const projects = [
     image: codeQuizGame,
     github: 'https://github.com/Frank-Colorado/code-quiz-game.git',
     website: 'https://frank-colorado.github.io/code-quiz-game/',
-  },
-  {
-    name: 'Weather Dashboard',
-    image: 'https://via.placeholder.com/150',
-    github: '',
   },
 ];
 
