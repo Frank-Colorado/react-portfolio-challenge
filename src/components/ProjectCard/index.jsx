@@ -26,6 +26,7 @@ const ProjectCard = ({ name, image, github, website }) => {
           alt="{name} picture"
           sx={{
             cursor: 'default',
+            borderBottom: '1px solid #948B89',
           }}
         />
 
