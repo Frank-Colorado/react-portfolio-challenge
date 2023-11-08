@@ -1,31 +1,26 @@
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import ProjectCard from "../../components/ProjectCard";
-import projects from "../../utils/projectList";
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import ProjectCard from '../../components/ProjectCard';
+import projects from '../../utils/projectList';
 
 const Portfolio = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100vw",
-      }}
-    >
+    <div>
       <Typography
         variant="h3"
         align="center"
         sx={{
-          fontFamily: "Constantia Regular",
+          fontFamily: 'Constantia Regular',
           fontWeight: 700,
-          letterSpacing: ".3rem",
-          color: "inherit",
-          textDecoration: "none",
-          margin: "4rem",
+          letterSpacing: '.3rem',
+          color: 'inherit',
+          textDecoration: 'none',
+          margin: '4rem',
         }}
       >
         Projects
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ bgcolor: 'blue' }}>
         {projects.map((project, index) => (
           <Grid
             key={index}

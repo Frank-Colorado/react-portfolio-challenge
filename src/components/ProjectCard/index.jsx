@@ -13,7 +13,7 @@ const ProjectCard = ({ name, image, github, website }) => {
   return (
     <Card
       sx={{
-        maxWidth: 450,
+        width: 450,
         minHeight: 350,
         backgroundColor: 'black',
       }}
