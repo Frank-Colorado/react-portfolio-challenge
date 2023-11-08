@@ -50,6 +50,12 @@ const projects = [
     github: 'https://github.com/Frank-Colorado/code-quiz-game.git',
     website: 'https://frank-colorado.github.io/code-quiz-game/',
   },
+  {
+    name: 'Weather Dashboard',
+    image: 'https://via.placeholder.com/150',
+    github: '',
+    website: '',
+  },
 ];
 
 export default projects;

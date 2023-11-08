@@ -23,7 +23,7 @@ const ProjectCard = ({ name, image, github, website }) => {
           component="img"
           height="220"
           image={image}
-          alt="{name} picture"
+          alt={`${name} image`}
           sx={{
             cursor: 'default',
             borderBottom: '1px solid #948B89',
