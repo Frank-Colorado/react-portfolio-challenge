@@ -6,6 +6,7 @@ import codeQuizGame from '../../assets/codequizgame.png';
 import soccerScout from '../../assets/soccerscout.png';
 import gitGudGames from '../../assets/gitgudgames.png';
 import weatherDashboard from '../../assets/weatherdashboard.png';
+import workScheduler from '../../assets/workscheduler.png';
 
 const projects = [
   {
@@ -56,6 +57,12 @@ const projects = [
     image: weatherDashboard,
     github: 'https://github.com/Frank-Colorado/weather-app-challenge.git',
     website: 'https://frank-colorado.github.io/weather-app-challenge/',
+  },
+  {
+    name: 'Work Scheduler',
+    image: workScheduler,
+    github: 'https://github.com/Frank-Colorado/work-day-scheduler.git',
+    website: 'https://frank-colorado.github.io/work-day-scheduler/',
   },
 ];
 
