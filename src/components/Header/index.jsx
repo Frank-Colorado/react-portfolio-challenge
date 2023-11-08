@@ -32,7 +32,6 @@ const Header = () => {
       style={{
         backgroundColor: '#0A090C',
         height: '11vh',
-        mb: '7vh',
       }}
       position="static"
     >

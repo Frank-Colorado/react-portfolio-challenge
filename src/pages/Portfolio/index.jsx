@@ -20,7 +20,7 @@ const Portfolio = () => {
       >
         Projects
       </Typography>
-      <Grid container spacing={2} sx={{ bgcolor: 'blue' }}>
+      <Grid container spacing={2}>
         {projects.map((project, index) => (
           <Grid
             key={index}
