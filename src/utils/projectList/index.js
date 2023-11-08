@@ -5,6 +5,7 @@ import noteTaker from '../../assets/notetaker.png';
 import codeQuizGame from '../../assets/codequizgame.png';
 import soccerScout from '../../assets/soccerscout.png';
 import gitGudGames from '../../assets/gitgudgames.png';
+import weatherDashboard from '../../assets/weatherdashboard.png';
 
 const projects = [
   {
@@ -52,9 +53,9 @@ const projects = [
   },
   {
     name: 'Weather Dashboard',
-    image: 'https://via.placeholder.com/150',
-    github: '',
-    website: '',
+    image: weatherDashboard,
+    github: 'https://github.com/Frank-Colorado/weather-app-challenge.git',
+    website: 'https://frank-colorado.github.io/weather-app-challenge/',
   },
 ];
 
